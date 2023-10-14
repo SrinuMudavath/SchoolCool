@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Staff Management</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Staff Management</h2>
+        <form id="staff-form">
+            <div class="form-group">
+                <label for="staff-name">Staff Name</label>
+                <input type="text" class="form-control" id="staff-name" name="staff-name" required>
+            </div>
+            <div class="form-group">
+                <label for="employment-status">Employment Status</label>
+                <select class="form-control" id="employment-status" name="employment-status">
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="contract">Contract</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="teaching-assignments">Teaching Assignments</label>
+                <textarea class="form-control" id="teaching-assignments" name="teaching-assignments" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
